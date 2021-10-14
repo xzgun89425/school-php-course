@@ -25,6 +25,7 @@
                 background-color: rgb(27,32,43);
                 color: #fff;
                 padding-top: 20px;
+                padding-bottom: 20px;
             }
             .alink a{
                 font-family: sans-serif ;
