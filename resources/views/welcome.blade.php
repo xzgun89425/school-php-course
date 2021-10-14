@@ -22,7 +22,9 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: #f7fafc;
+                background-color: rgb(27,32,43);
+                color: #fff;
+                padding-top: 20px;
             }
             .alink a{
                 font-family: sans-serif ;
