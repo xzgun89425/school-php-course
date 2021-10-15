@@ -16,18 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('product/{id?}', function ($id=0) {
+    return 'ID='.$id;
+});
 
-Route::get('foo', function () {
-    return 'Hello World'; 
-}); 
-
-Route::get('about', function () {
-    return view('about'); 
-}); 
-Route::get('product', function () {
-    return view('product'); 
-}); 
-Route::get('service', function () {
-    return view('service');
-}); 
-   
+//view 視界,視圖,--直白或口語化->回傳一個頁面or畫面

@@ -18,58 +18,9 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
-            .alink{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: rgb(27,32,43);
-                color: #fff;
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-            .alink a{
-                font-family: sans-serif ;
-                margin: 0px 20px;
-                padding: 20px;
-            }
-            .alink a:hover{
-                color:red;
-                border-bottom: 2px solid red;
-                padding-bottom: 18px;
-            }
         </style>
     </head>
     <body class="antialiased">
-        <div class="alink">
-            <a href="{{ url('about') }}">關於</a>
-            <a href="{{ url('product') }}">產品</a>
-            <a href="{{ url('service') }}">服務</a>
-        </div>
-        <div class="alink">
-            @switch( date("l") )
-                @case('Monday')
-                    今天星期一
-                    @break
-                @case('Tuesday')
-                    今天星期二
-                    @break
-                @case('Wednesday')
-                    今天星期三
-                    @break
-                @case('Thursday')
-                    今天星期四
-                    @break
-                @case('Friday')
-                    今天星期五
-                    @break
-                @case('Saturday')
-                    今天星期六
-                    @break
-                @case('Sunday')
-                    今天星期日
-                    @break
-            @endswitch
-        </div>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -177,10 +128,8 @@
                 </div>
             </div>
         </div>
-        <div class="alink">
-            學號: 1310934042
-            姓名: 瞿愷廷
-        </div>
+        <div>
+            學號：姓名:
+        </div>   
     </body>
 </html>
-
